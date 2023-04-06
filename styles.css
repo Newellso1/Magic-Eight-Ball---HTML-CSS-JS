@@ -1,13 +1,14 @@
 * {
     margin: 0;
     padding: 0;
-    border: 1px solid black;
+    font-family: Josefin Sans;
+    /* border: 1px solid black; */
 }
 
 body {
     display: flex;
     flex-direction: column;
-height: 98vh;
+    height: 100vh;
 }
 
 .header,
@@ -17,13 +18,14 @@ height: 98vh;
     align-items: center;
     width: 100vw;
     height: 60px;
+    background-color: white;
+    box-shadow: 0 0 10px;
 }
 
 .header {
-    border-bottom: 1px solid black;
-}
-.footer {
-    border-top: 1px solid black;
+    font-weight: 200;
+    font-size: 30px;
+    letter-spacing: 5px;
 }
 /* Setting up the ball/button box  */
 
@@ -67,24 +69,29 @@ height: 98vh;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 90%;
+    height: 87%;
     border-radius: 50%;
-    border: 1px solid black;
+    border: 3px solid black;
 }
 
 .innerBall {
     width: 45%;
     height: 45%;
     border-radius: 50%;
-    border: 1px solid black;
+    border: 3px solid black;
 }
 
 /* Styling the input box */
 
 .question input {
     width: 85%;
-    height: 85%;
+    height: 70%;
     text-align: center;
+    text-transform: uppercase;
+    border-top: none;
+    border-bottom: none;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
 }
 
 /* Styling the Shake button */
@@ -92,4 +99,6 @@ height: 98vh;
 .button button {
     padding: 10px;
     width: 50%;
+    background: none;
+    border: 3px solid black;
 }
