@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+height: 98vh;
+}
+
+.header,
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 60px;
+}
+
+.header {
+    border-bottom: 1px solid black;
+}
+.footer {
+    border-top: 1px solid black;
+}
+/* Setting up the ball/button box  */
+
+.main {
+    display: flex;
+    flex: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 300px;
+    height: 550px;
+}
+
+.ball {
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.question {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+}
+
+.button {
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Shaping the ball where the answer will show */
+
+.outerBall {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.innerBall {
+    width: 45%;
+    height: 45%;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+/* Styling the input box */
+
+.question input {
+    width: 85%;
+    height: 85%;
+    text-align: center;
+}
+
+/* Styling the Shake button */
+
+.button button {
+    padding: 10px;
+    width: 50%;
+}
