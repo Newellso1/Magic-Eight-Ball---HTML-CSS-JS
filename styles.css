@@ -46,11 +46,13 @@ body {
     flex: auto;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .container {
     width: 300px;
     height: 550px;
+   
 }
 
 .ball {
@@ -72,12 +74,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .answer {
     text-align: center;
     font-size: 16px;
     line-height: 20px;
+    transition: all ease-in-out 0.5s;
 }
 
 /* Shaping the ball where the answer will show */
@@ -113,11 +117,11 @@ body {
     text-transform: uppercase;
     border: 3px solid;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 13px;
     ;
 }
 
-/* Styling the Shake button */
+/* Styling the Shake & reset button */
 
 .button button {
     padding: 10px;
@@ -126,14 +130,45 @@ body {
     border: 3px solid;
     border-radius: 5px;
     font-size: 12px;
-    transition: border ease-in-out 0.4s;
     margin-top: 10px;
     letter-spacing: 1px;
    
 }
 
-button:hover {
+.resetButton button {
+    padding: 10px 30px;
+    background: none;
+    border: 3px solid;
+    border-radius: 5px;
+    font-size: 12px;
+    letter-spacing: 1px;
+
+}
+
+/* button:hover {
     border: 3px solid #0e276d;
     
     
+} */
+
+
+/* Shaking animation for innerBall & outerBall */
+
+.shake {
+    animation: shake 0.1s ease-in-out ;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {   
+        transform: translateX(5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(0px);
+    }
 }
