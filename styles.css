@@ -39,6 +39,7 @@ body {
     padding: 0 30px 0 30px;
     letter-spacing: 2px;
 }
+
 /* Setting up the ball/button box  */
 
 .main {
@@ -52,7 +53,7 @@ body {
 .container {
     width: 300px;
     height: 550px;
-   
+
 }
 
 .ball {
@@ -115,10 +116,10 @@ body {
     height: 70%;
     text-align: center;
     text-transform: uppercase;
-    border: 3px solid;
+    border: 2px solid;
     border-radius: 5px;
     font-size: 13px;
-    ;
+    box-shadow: 0 0 2px #011447;
 }
 
 /* Styling the Shake & reset button */
@@ -127,47 +128,47 @@ body {
     padding: 10px;
     width: 50%;
     background: none;
-    border: 3px solid;
+    border: 2px solid;
     border-radius: 5px;
     font-size: 12px;
     margin-top: 10px;
     letter-spacing: 1px;
-   
+    box-shadow: 0 0 2px #011447;
 }
+
 
 .resetButton button {
     padding: 10px 30px;
     background: none;
-    border: 3px solid;
+    border: 2px solid black;
     border-radius: 5px;
     font-size: 12px;
     letter-spacing: 1px;
-
+    box-shadow: 0 0 2px #011447;
 }
 
-/* button:hover {
-    border: 3px solid #0e276d;
-    
-    
-} */
+
 
 
 /* Shaking animation for innerBall & outerBall */
 
 .shake {
-    animation: shake 0.1s ease-in-out ;
+    animation: shake 0.1s ease-in-out;
 }
 
 @keyframes shake {
     0% {
         transform: translateX(0);
     }
-    25% {   
+
+    25% {
         transform: translateX(5px);
     }
+
     50% {
         transform: translateX(5px);
     }
+
     75% {
         transform: translateX(0px);
     }
